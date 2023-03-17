@@ -7,6 +7,12 @@ function App() {
 
   return (
     <div className="app">
+      <Tweet name="John" message="Hello there" likes="30"/>
+      div
+      <Tweet name="Jane" message="Hello there" likes="30"/>
+      <div>
+        hello
+      </div>
     </div>
   );
 }
