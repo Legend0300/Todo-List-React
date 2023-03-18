@@ -7,9 +7,40 @@
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  max-width: 500px; /* adjust the maximum width as needed */
+
+  /* Flexbox properties */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-*{
+/* Default styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
   background-color: black;
   color: aliceblue;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .app {
+    max-width: 100%; /* set the maximum width to the full width */
+    margin: 0; /* remove margin */
+    padding: 0; /* remove padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app {
+    flex-direction: column; /* set the direction to column */
+  }
 }
