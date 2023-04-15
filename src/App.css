@@ -1,20 +1,3 @@
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  max-width: 500px; /* adjust the maximum width as needed */
-
-  /* Flexbox properties */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 /* Default styles */
 * {
   box-sizing: border-box;
@@ -28,6 +11,86 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: Arial, sans-serif;
+}
+
+/* App styles */
+
+
+.app form {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.app label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.app input[type="text"], .app input[type="checkbox"], .app button[type="button"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.app input[type="checkbox"] {
+  margin-bottom: 0;
+}
+
+.app hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.app button[type="submit"], .app button[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.app button[type="submit"]:hover, .app button[type="button"]:hover {
+  background-color: #0069d9;
+}
+
+.app h1, .app h2, .app h3 {
+  margin: 0;
+}
+
+.app h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.app h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.app h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.app .todo {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.app .todo button {
+  margin-left: 10px;
 }
 
 /* Media queries */
